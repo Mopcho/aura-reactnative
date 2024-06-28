@@ -1,5 +1,6 @@
 {
   "expo": {
+    "scheme": "aora-reactnative",
     "name": "aora-reactnative",
     "slug": "aora-reactnative",
     "version": "1.0.0",
@@ -23,8 +24,6 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      "expo-router"
-    ]
+    "plugins": ["expo-router"]
   }
 }
