@@ -1,10 +1,15 @@
-import { Text, View } from 'react-native';
-import { SafeAreaView } from 'react-native-safe-area-context';
+import React from 'react';
+import { Stack } from 'expo-router';
 
-export default function RootLayout() {
+const _layout = () => {
   return (
-    <SafeAreaView>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </SafeAreaView>
+    <Stack>
+      <Stack.Screen
+        name="index"
+        options={{ headerShown: false }}
+      ></Stack.Screen>
+    </Stack>
   );
-}
+};
+
+export default _layout;
