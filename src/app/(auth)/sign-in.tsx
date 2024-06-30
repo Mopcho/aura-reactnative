@@ -1,12 +1,4 @@
-import {
-  View,
-  Text,
-  ScrollView,
-  Image,
-  TextInput,
-  Pressable,
-  StyleSheet,
-} from 'react-native';
+import { View, Text, ScrollView, Image } from 'react-native';
 import React from 'react';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '../../constants';
@@ -22,7 +14,7 @@ const SignIn = () => {
           height: '100%',
         }}
       >
-        <View className="w-full flex h-full px-4 flex-col">
+        <View className="w-full flex h-full px-4 flex-col justify-center">
           <Image
             source={images.logo}
             className="w-full max-w-[170px] self-start"
@@ -31,9 +23,8 @@ const SignIn = () => {
 
           <Text className="text-white text-2xl font-pbold">Sign In</Text>
 
-          <View>
+          <View className="w-full">
             <FormField text="Email" />
-
             <FormField text="Password" />
 
             <Text className="text-gray-200 text-md font-pregular self-end mt-4">

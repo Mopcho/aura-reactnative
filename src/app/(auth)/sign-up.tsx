@@ -13,7 +13,7 @@ const SignUp = () => {
           height: '100%',
         }}
       >
-        <View className="w-full flex h-full px-4 flex-col">
+        <View className="w-full flex h-full px-4 flex-col justify-center">
           <Image
             source={images.logo}
             className="w-full max-w-[170px] self-start"

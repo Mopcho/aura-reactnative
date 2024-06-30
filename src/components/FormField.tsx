@@ -6,12 +6,18 @@ interface FormFieldProps {
   text: string;
   placeholder?: string;
   onChange?: () => void;
+  additionalClasses?: string;
 }
 
-const FormField = ({ text, placeholder, onChange }: FormFieldProps) => {
+const FormField = ({
+  text,
+  placeholder,
+  onChange,
+  additionalClasses,
+}: FormFieldProps) => {
   const [showingPassword, setShowingPassword] = useState(false);
   return (
-    <View>
+    <View className={additionalClasses}>
       <Text className="text-white text-md font-pregular mt-4">{text}</Text>
       <View className="w-full h-16 px-4 bg-black-100 rounded-2xl border-2 border-black-200 focus:border-secondary flex flex-row items-center">
         <TextInput
