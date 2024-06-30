@@ -34,6 +34,13 @@ const _layout = () => {
         name="index"
         options={{ headerShown: false }}
       ></Stack.Screen>
+      <Stack.Screen
+        name="(auth)"
+        options={{
+          headerShown: true,
+          title: 'Authentication',
+        }}
+      ></Stack.Screen>
     </Stack>
   );
 };
